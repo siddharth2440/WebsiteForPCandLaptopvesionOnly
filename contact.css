@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+.nav__container{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.contact_section{
+    position: absolute;
+    top: 10vh;
+    background-image: url("./assets/contact_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    min-width: 100%;
+    filter: drop-shadow(2rem);
+}
+.contact_section .contact-div{
+    background: linear-gradient(rgb(205, 205, 255),rgb(48, 121, 177),rgb(137, 137, 242));
+    display: flex;
+    margin-top: 6.5rem;
+    border-radius: 2rem;
+    height: 58vh;
+    width: 60%;
+    margin-left: 14rem;
+    padding: 2rem 4rem;
+}
+.contact_section .contact-div .contact-div-image-side{
+    margin-top: -3.5rem;
+}
+.contact_section .contact-div .contact-div-image-side img{
+    height: 35rem;
+    width: 21rem;
+    border-radius: 3rem;
+    border: 0.5rem solid rgb(74, 171, 212);
+    margin-left: 1.2rem;
+}
+.contact_section .contact-div .contact-div-details-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5.6rem;
+    padding: 1.4rem 1.3rem;
+}
+.contact_section .contact-div .contact-div-details-section input{
+    padding: 0.7rem 0.3rem;
+    border-radius: 0.4rem;
+    width: 13rem;
+    border:0;
+    border-bottom: 0.2rem solid rgb(89, 84, 84);
+    outline: 0;
+    background: #080707;
+    color: #fff;    
+}
+.contact_section .contact-div .contact-div-details-section .email {
+    margin-top: 1.3rem;
+}
+.contact_section .contact-div .contact-div-details-section .email input{
+    margin-top: 1.3rem;
+    width: 25rem;
+}
+.contact_section .contact-div .contact-div-details-section .Message{
+    margin-top: 1.4rem;
+    width: 30rem;
+    height: 10rem;
+    color: aliceblue;
+    background: #080707;
+}
+.contact_section .contact-div .contact-div-details-section .Message textarea{
+    background: #080707;
+}
+.contact_section .contact-div .contact-div-details-section button{
+    padding: 0.8rem 0.4rem;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 1.3rem;
+    margin-left: 8rem;
+    cursor: pointer;
+}

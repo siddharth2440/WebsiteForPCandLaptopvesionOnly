@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 2px solid rgb(223, 217, 217);
+    z-index: 11;
+    background: #1c1e1a;
+}
+.nav__logo{
+    color: rgb(121, 202, 224);
+    transition:all 300ms ease-in;
+    margin-top: 0.3rem;
+    margin-left: 0.5rem;
+}
+.nav__logo:hover{
+    color: rgb(0, 255, 221);
+    cursor: pointer;
+}
+#nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__links{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.nav__links li a{
+    color: #d1bdbd;
+    transition:all 300ms ease-in;
+    font-size: 1.1rem;
+}
+.nav__links li a:hover{
+    color: #ffffff;
+}
+.nav__profile .profiles{
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+}
+#nav__container .nav__profile .profiles i{
+    color: #ffffff;
+    transition:all 400ms ease-in-out;
+}
+#nav__container .nav__profile .profiles .profile__1,.profile__2,.profile__3{
+    transition:all 400ms ease-in-out;
+}
+#nav__container .nav__profile .profiles .profile__1:hover{
+    color: rgb(186, 166, 137);
+    transform: scale(1.5);
+}
+#nav__container .nav__profile .profiles .profile__2:hover{
+    color: rgb(186, 166, 137);
+    transform: scale(1.5);
+}
+#nav__container .nav__profile .profiles .profile__3:hover{
+    color: rgb(186, 166, 137);
+    transform: scale(1.5);
+}
+.btns{
+    display: none;
+}
+.nav__profile{
+    font-size: 2rem;
+}
+header{
+    position: relative;
+    top: 10vh;
+}
+.Header{
+    display: grid;
+    grid-template-columns: 40% 55%;
+    gap: 1.4rem;
+    padding-top: 2.3rem;
+    background: #2f2b2b;
+    height: 80vh;
+    width: 100%;
+    background-image: url("D:\\MERN Stack\\Project-8\\assets\\bg-texture.png");
+}
+.Header .header__left img{
+    border: 0.6rem solid #545050;
+    border-radius: 1.5rem;
+    height: 22rem;
+    width: auto;
+    padding: auto;
+
+}
+.Header .header__left{
+    display: flex;
+    flex-direction: column;
+}
+.Header .header__left .blank{
+    height: 2.3rem;
+    width: 12rem;
+    background-color: #625a5a;
+    box-shadow:0 1rem 1rem rgb(0,0,0,0.2);
+    margin: 1rem auto;
+    border-radius: 5rem;
+}
+.Header .header__right .content .quote,h1,p,a{
+    color: #00fbff;
+}
+.Header .header__right .content h1{
+    color: rgb(246, 5, 5);
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-shadow: 0rem 0.2rem 1rem rgb(179, 21, 21);
+}
+.Header .header__right .content p{
+    color: #00fbff;
+    margin-top: 1.5rem;
+}
+.Header .header__right .content button{
+    margin:2rem 14rem;
+}
+.Header .header__right .content{
+    padding: 0.5rem 0.3rem;
+    margin-top: 5.5rem;
+}
+
+.Header .header__right .content a button{
+    padding: 0.3rem 0.9rem;
+}
+.Header .header__right .content a button{
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #ccb6b6;
+    color: #1c1e1a;
+    border:none;
+    border-radius: 2rem;
+    font-weight: 800;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+.evolution{
+    height: 70vh;
+    width: 100%;
+    margin-top: 4.6rem;
+    display: grid;
+    background-color: #3f3b3b;
+    grid-template-columns: 45% 55%;
+    place-items: center;
+    gap: 0.3rem;
+}
+.evolution .evolution__images{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1.3rem;
+    margin-top: 0.5rem;
+}
+.evolution .evolution__content{
+    position: relative;
+    top: -4rem;
+    color: #ffffff;
+}
+.evolution .evolution__content .unknown{
+    padding: 2.3rem;
+    font-weight: bolder;
+}
+.evolution .evolution__content .text h3{
+    font-size: 2.2rem;
+    font-weight: 999;
+    position: relative;
+    top: -2rem;
+    text-align: center;
+    color: rgb(246, 5, 5);
+    text-shadow: 0rem 0.2rem 1rem rgb(179, 21, 21);
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+}
+.evolution .evolution__images img{
+    height: 13rem;
+    width: auto;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+    border-radius: 2rem;
+}
+
+.box{
+    background: #3f3b3b;
+    z-index: 2;
+}
+.box .horizontal__box{
+    width: 90%;
+    height: 12rem;
+    border: 2px solid #ffffff;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 1.2rem 6rem rgb(219, 23, 23);
+    align-items: center;
+    padding:2rem auto;
+}
+.box .horizontal__box .context h1{
+    font-size: 2.5rem;
+}
+.box .horizontal__box .context h1 span{
+    color: #ff4400;
+    text-shadow: 0rem 0.2rem 1rem rgb(179, 21, 21);
+}
+.box .horizontal__box .context p{
+    font-size: 1.3rem;
+    font-weight: 999;
+    color: rgb(255, 147, 5);
+    text-align: center;
+}
+.box .horizontal__box .arrow i{
+    font-size: 8rem;
+    
+}
+#main{
+    background-color:  #372d2d;
+}
+.human__AI{
+    max-width: 100%;
+    min-height: 70vh;
+    color: #00fbff;
+}
+.human__AI .human__AI__heading {
+    padding-top: 3rem;
+    font-size: 3.7rem;
+    color: #ff4400;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 0rem 0.2rem 1rem rgb(179, 21, 21);
+}
+.human__AI .human__AI__content .human__AI__title{
+    font-size: 1.2rem;
+    color: #d1bdbd;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.human__AI .human__AI__content .section1{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    place-items:center;
+}
+.human__AI .human__AI__content .section1 .section1images2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+}
+.human__AI .human__AI__content .section1{
+    margin-top: 3.5rem;
+}
+.human__AI .human__AI__content .section1 .section1__para{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    word-spacing: 0.6rem;
+}
+.human__AI .human__AI__content .section1 .section1images{
+    padding-top: 2rem;
+}
+.human__AI .human__AI__content .section1 .section1images img{
+    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.4);
+    border-radius: 2rem;
+}
+.human__AI .human__AI__content .section1 .section1img1{
+    height: 10rem;
+    width: 13rem;
+    border-radius: 2rem;
+}
+.human__AI .human__AI__content .section1 .section1img1 img{
+    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.4);
+    border-radius: 2rem;
+}
+.human__AI .human__AI__content .section1 .section1img2{
+    height: 10rem;
+    width: 13rem;
+    border-radius: 2rem;
+}
+.human__AI .human__AI__content .section1 .section1img2 img{
+    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.4);
+    border-radius: 2rem;
+}
+.human__AI .human__AI__content .section1 .section1img3{
+    height: 20rem;
+    width: 15rem;
+}
+.human__AI .human__AI__content .section2{
+    min-height: 40vh;
+    min-width: 100vw;
+}
+.human__AI .human__AI__content .section2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.human__AI .human__AI__content .section2 p {
+    width: 48%;
+    padding: 3rem 1.3rem;
+    margin-left: 2.5rem;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+.human__AI .human__AI__content .section2 .img img{
+    height: 15rem;
+    width: 16rem;
+    margin-right: 1.6rem;
+    border: 2rem;
+    transition: all 500ms ease-in-out;
+    border-radius: 1.6rem;
+}
+.human__AI .human__AI__content .section2 .img img:hover{
+    transform: translateY(-2rem);
+    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.human__AI .human__AI__content .section3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.human__AI .human__AI__content .section3 .img img{
+    height: 15rem;
+    width: 18rem;
+    cursor: pointer;
+    border-radius: 2.2rem;
+}
+.human__AI .human__AI__content .section3 p{
+    width:48%;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+#FutureSection{
+    background: #24162f;
+}
+.futureHeading{
+    padding-top: 2.2rem;
+    color: #ff4400;
+    text-shadow: 0rem 0.2rem 1rem rgb(179, 21, 21);
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 800;
+}
+#FutureSection .futuretitle{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    color: snow;
+    font-size: 1rem;
+}
+#FutureSection .aboutAIinFuture{
+    width: 90%;
+    padding-top: 3.2rem;
+    margin: auto;
+}
+#FutureSection .AI__examples{
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+#FutureSection .cards__container{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.8rem;
+    padding-top: 3rem;
+}
+/* #FutureSection .cards__container .card-1,.card-2,.card-3,.card-4,.card-5,.card-6{
+    border: 2px solid #ffffff;
+} */
+/* #FutureSection .cards__container  */
+
+#FutureSection .cards__container img{
+    height: 16rem;
+    width: 22rem;
+    margin-top: 1.3rem;
+    margin-left: 3rem;
+    border: 0.9rem solid #ffa3a3;
+    border-radius: 1.2rem;
+    cursor:pointer;
+}
+#FutureSection .cards__container h3{
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 0.7rem;
+    color: #ccb6b6;
+}
+#FutureSection .cards__container p{
+    color: #ffffff;
+    width: 80%;
+    margin: auto;
+}
+#FutureSection .cards__container h3{
+    transition: all 500ms ease-in-out;
+}
+#FutureSection .cards__container h3:hover{
+    color: #ff4400;
+}
+#FutureSection .cards__container button{
+    outline: 0;
+    border: 0;
+    padding: 1rem 1.5rem;
+    border-radius: 1.9rem;
+    background-color: #545050;
+    display: inline-block;
+    margin-top: 1.2rem;
+    margin-left: 10rem;
+    margin-bottom: 0.6rem;
+    transition: all 600ms ease-in-out;
+}
+#FutureSection .cards__container button:hover{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+#promotion{
+    background: #24162f;
+    background-image: url("D:\\MERN Stack\\Project-8\\assets\\bg-texture.png");
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#promotion h4{
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+#promotion h2{
+    margin-top: 1.6rem;
+    margin-bottom: 0.9rem;
+    color: #ff4400;
+    font-size: 2.3rem;
+    text-shadow: 0rem 0.2rem 1rem rgb(179, 21, 21);
+}
+#promotion img{
+    border-radius: 50%;
+    height: 20rem;
+    border: 0.3rem solid rgb(255, 163, 163);
+}
+#promotion .quote {
+    padding-top: 1.3rem;
+    font-size: 1.2rem;
+    color: aliceblue;
+}
+#promotion .quote span{
+    color: red;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+#footer{
+    border-top: 0.1rem solid #979393;
+    background: #24162f;
+}

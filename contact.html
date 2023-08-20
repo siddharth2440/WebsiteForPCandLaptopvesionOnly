@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Me!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- contact Nav-Bar -->
+    <nav id="nav__container">
+        <div class="nav__logo">
+            <h3 class="logo-upper">ARTIFICIAL</h3>
+            <h3 class="logo-lower">INTELEGENCE</h3>
+        </div>
+        <ul class="nav__links">
+            <li id="Home"><a href="Home.html" >Home</a></li>
+            <li id="AI__impact"><a href="#main" >Human+AI</a></li>
+            <li id="AI__Future"><a href="#FutureSection" >Future</a></li>
+            <li id="contact__page"><a href="contact.html" >Contact Us</a></li>
+        </ul>
+        <div class="nav__profile">
+            <ul class="profiles">
+                <li class="profile__1"><a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-fill"></i></a></li>
+                <li class="profile__2"><a href="https://www.facebook.com/" target="_blank"><i class="ri-facebook-box-fill"></i></a></li>
+                <li class="profile__3"><a href="https://in.linkedin.com/" target="_blank"><i class="ri-linkedin-box-fill"></i></a></li>
+            </ul>
+        </div>
+        <div class="btns">
+            <div class="open"><i class="ri-menu-fill"></i></div>
+            <div class="close"><i class="ri-close-circle-fill"></i></div>
+        </div>
+    </nav>
+
+    <section class="contact_section">
+        <div class="contact-div">
+            <div class="contact-div-image-side">
+                <img src="./assets/contact-section-image.jpg" alt="image">
+            </div>
+            <div class="contact-div-details-section">
+                <div class="name">
+                    <input type="text" name="First-Name" placeholder="First Name" required>
+                    <input type="text" name="Last Name" placeholder="Last Name" required>
+                </div>
+                <div class="email">
+                    <input type="email" name="Email Address" placeholder="Your Email Address">
+                </div>
+                <textarea name="Message" cols="30" rows="10"  placeholder="Enter Message Here" class="Message" required></textarea>
+                <button type="submit" class="button">Send Message</button>
+            </div>
+        </div>
+    </section>
+    
+
+<!-------------------------------------------- JavaScript Section ------------------------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- ============================== Gsap CDN Ends ================================== -->
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+<script src="script.js"></script>
+</body>
+</html>
